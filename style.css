@@ -1,0 +1,25 @@
+.largura-card{
+    max-width: 18rem;
+}
+
+.imagem-carrossel-um {
+    object-fit: cover;
+    object-position: 0 80%;
+    height: 680px;
+}
+
+.imagem-carrossel-dois {
+    object-fit: cover;
+    height: 6800px;
+    }
+
+main{
+    background-color:white;
+}
+
+.img-cred {
+    object-fit: cover;
+    object-position: 0 70%;
+    height: 300px;
+    width: 100%;
+}
