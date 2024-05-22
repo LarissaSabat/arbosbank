@@ -2,21 +2,31 @@
     max-width: 18rem;
 }
 
+.carrossel-conteiner{
+    height: 600px;
+}
 .imagem-carrossel-um{
-    width: 100px;
-    height: auto;
+    object-fit: cover;
+    object-position: 50% 0;
 }
 
 .imagem-carrossel-dois {
     object-fit: cover;
-    object-position: 0 80%;
-    height: 680px;
+    object-position: 0 15%;
 }
 
 .imagem-carrossel-tres {
     object-fit: cover;
-    height: 680px;
+    object-position: 50% 0;
     }
+
+.fonte-carrossel {
+    font-family: "PT Serif", serif;
+  }
+
+.text-shadow{
+    text-shadow: 4px 4px 8px black;
+}
 
 main{
     background-color:whitesmoke;
@@ -24,7 +34,7 @@ main{
 
 .img-cred {
     object-fit: cover;
-    object-position: 0 70%;
+    object-position: 0 55%;
     height: 300px;
     width: 100%;
 }
