@@ -7,7 +7,7 @@
 }
 .imagem-carrossel-um{
     object-fit: cover;
-    object-position: 50% 0;
+    object-position: 70% 0;
 }
 
 .imagem-carrossel-dois {
@@ -42,4 +42,19 @@ main{
 .img-logo{
     widows: 100px;
     height: 100px;
+}
+
+.font-name{
+    widows: 75px;
+    height: 75px;
+}
+
+.borda-cor-card{
+    border: 15px solid green!important;
+    border-radius: 10px;
+}
+
+.card-size{
+    width: 350px !important;
+    height: 250px;;
 }
