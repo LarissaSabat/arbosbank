@@ -58,3 +58,18 @@ main{
     width: 350px !important;
     height: 250px;;
 }
+
+#produtos {
+    padding: 50px;
+    margin-top: 20px;
+}
+
+#credito-carbono{
+    padding: 50px;
+    margin-top: 20px;
+}
+
+#quem-somos{
+    padding: 50px;
+    margin-top: 20px;
+}
