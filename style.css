@@ -53,6 +53,9 @@ main{
     border: 15px solid green!important;
     border-radius: 10px;
 }
+.card-title{
+    color: darkgreen;
+}
 
 .card-size{
     width: 350px !important;
