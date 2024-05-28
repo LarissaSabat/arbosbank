@@ -1,242 +1,255 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arbos Bank</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Serif:wght@700&display=swap" 
-      rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Arbos Bank</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Serif:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
 
-  <body>
-    <header>
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#inicio">
-            <img src="src/img/only_logo_transparent_background.png" 
-              alt="Arbos Bank" width="40" height="40">
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top" aria-label="Main navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">
+          <img src="src/img/only_logo_transparent_background.png" alt="Arbos Bank" width="40" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
+          
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li><a class="nav-link active" aria-current="page" href="#inicio">INÍCIO</a></li>
+            <li><a class="nav-link" href="#produtos">PRODUTOS</a></li>
+            <li><a class="nav-link" href="#credito-carbono">CRÉDITO DE CARBONO</a></li>
+            <li><a class="nav-link" href="#quem-somos">QUEM SOMOS</a></li>
+            <li><a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-contato" href="#">CONTATO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li><a class="nav-link active" aria-current="page" href="#inicio">INICIO</a></li>
-                <li><a class="nav-link" href="#produtos">PRODUTOS</a></li>
-                <li><a class="nav-link" href="#credito-carbono">CRÉDITO DE CARBONO</a></li>
-                <li><a class="nav-link" href="#quem-somos" >QUEM SOMOS</a></li>
-                <li><a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-contato" href="#">CONTATO</a></li>
-            </ul>
+  <main>
+    <section class="carrossel" id="inicio">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carrossel-conteiner carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="src/img/Slide 1.jpg"
+              class="d-block w-100 imagem-carrossel-um" alt="dark">
+          </div>
+          <div class="carousel-item">
+            <img src="src/img/Slide 2.jpg" class="d-block w-100 imagem-carrossel-dois" alt="Logo Arbos Bank">
+          </div>
+          <div class="carousel-item">
+            <img src="src/img/Slide 3.jpg" class="d-block w-100 imagem-carrossel-tres" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="src/img/Slide 4.jpg" class="d-block w-100 imagem-carrossel-quatro" alt="...">
           </div>
         </div>
-      </nav>
-    </header>
-        
-    <main>
-      <section class="carrossel" id="inicio">
-        <div id="carouselExampleCaptions" class="carousel slide" data-interval="3000">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          </div>
-          <div class="carrossel-conteiner carousel-inner">
-            <div class="carousel-item active ">
-              <img src="https://www.publicdomainpictures.net/pictures/200000/nahled/plain-black-background.jpg" class="d-block w-100 imagem-carrossel-um" alt="dark">
-                <div class="carousel-caption d-none d-md-block h-75">
-                  <p class= "fonte-carrossel display-4 fs-1 text-shadow">A Arbos Bank tem a meta de reflorestar Meio Milhão de 
-                    hectares de Mata Atlântica e Floresta Amazônica, e você pode ser parte dessa transformação para um ecossistema 
-                    100% verde.</br> possa fazer a diferença no combate as mudanças climáticas.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-              <img src="src/img/18.jpg" class="d-block w-100 imagem-carrossel-um" alt="Logo Arbos Bank">
-                <div class="carousel-caption d-none d-md-block h-75">
-                  <p class= "fonte-carrossel display-4 fs-2 text-shadow">Estamos desenvolvendo uma plataforma para que a sociedade </br> possa fazer a diferença no combate as mudanças climáticas.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-              <img src="src/img/8.png" class="d-block w-100 imagem-carrossel-dois" alt="...">
-                <div class="carousel-caption d-none d-md-block h-75">
-                  <p class= "fonte-carrossel display-4 fs-1 text-shadow">Esta plataforma permitirá contabilizar, comercializar e investir em crédito de carbono!</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-              <img src="src/img/2.png" class="d-block w-100 imagem-carrossel-tres" alt="...">
-                <div class="carousel-caption d-none d-md-block h-75">
-                  <p class= "fonte-carrossel display-4 fs-1 text-shadow">Venha fazer parte do nosso time. </br> Faça parte da nossa lista de usuárois beta!</p>
-                </div>
-            </div>
-          </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>  
-        </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-        <section id="produtos">
-          <div class="container mt-5 mx-5  mt-1 mx-1">
-          <img src="src/img/dark_logo_transparent_background_name.png" class="font-name">
-          <p>A Arbos Bank, trata-se de um Banco digital de crédito de Carbono capaz de
-            contabilizar, comercializar e investir no mercado de carbono.</p>
-          <div class="row d-flex justify-content-between">
-            <div class="border-success largura-card mt-5 p-2 g-co">
-              <div class="card card-size">
-                <div class="card-body">
-                  <h5 class="card-title">Consultoria</h5>
-                  <p class="card-text">Oferecemos serviços de consultoria, fazendo inventários de emissões,
-                    e projetos de compensação carbono, gerados por pessoas Físicas e Jurídicas em
-                    qualquer área de atuação.</p>
-                  <a href="#" class="btn text-bg-success" data-bs-toggle="modal" data-bs-target="#modal-contato">Fale conosco</a>
-                </div>
-              </div>
-            </div>
-            <div class="border-success largura-card mt-5 p-2 g-col-6">
-              <div class="card card-size">
-                <div class="card-body">
-                  <h5 class="card-title">Compra e venda</h5>
-                  <p class="card-text">Comercialização dos créditos de carbono atuando
-                    como intermediário na compra e venda de créditos através de uma plataforma,
-                    ajudando empresas e indivíduos a compensar suas emissões GEE.</p>
-                  <a href="#" class="btn text-bg-success" data-bs-toggle="modal" data-bs-target="#modal-contato">Fale conosco</a>
-                </div>
-              </div>
-            </div>
-            <div class="border-success largura-card mt-5 p-2 g-co">
-              <div class="card card-size">
-                <div class="card-body">
-                  <h5 class="card-title">Investimento</h5>
-                  <p class="card-text">Oferecemos a possibilidade de fazer investimento em fundos
-                    voltados para projetos sustentáveis como, energias renováveis, desmatamento
-                    evitado, reflorestamento e entre outras opções</p>
-                  <a href="#" class="btn text-bg-success" data-bs-toggle="modal" data-bs-target="#modal-contato">Fale conosco</a>
-                </div>
+    <section id="produtos">
+      <div class="container mt-5 mx-5 mt-1 mx-1">
+        <img src="src/img/dark_logo_transparent_background_name.png" class="font-name" alt="Logo">
+        <p>A Arbos Bank, trata-se de um Banco digital de crédito de Carbono capaz de contabilizar, comercializar e
+          investir no mercado de carbono.</p>
+        <div class="row d-flex justify-content-between">
+          <div class="border-success largura-card mt-5 p-2 g-co">
+            <div class="card card-size">
+              <div class="card-body">
+                <h5 class="card-title">Consultoria</h5>
+                <p class="card-text">Oferecemos serviços de consultoria, fazendo inventários de emissões, e projetos de
+                  compensação carbono, gerados por pessoas Físicas e Jurídicas em qualquer área de atuação.</p>
+                <a href="#" class="btn text-bg-success" data-bs-toggle="modal" data-bs-target="#modal-contato">Fale
+                  conosco</a>
               </div>
             </div>
           </div>
-        </section>
-
-        <article class="container mt-5" id="credito-carbono">
-          <h3 class="fs-3 mt-5 mb-3">Crédito de carbono</h3>
-          <div class="d-flex align-items-center">
-            <p class="lh-sm mt-3 mx-2">O mercado de carbono não para de crescer e você não pode deixar de fazer parte dessa escalada!
-            </br></br></br>
-            Com nossa plataforma você poderá através de suas ações compensar seus gases de efeito estufa e contabilizar
-             em nossa plataforma podendo ganhar crédito de carbono. E o melhor, você poderá comercializar esse crédito de carbono 
-             podendo ganhar uma renda extra ajudando a mitigar as mudanças climáticas.
-            </br></br>
-            Além disso, se você optar por não vender seus crédito de carbono, outra opção é investir em nossos produtos que tem como 
-            foco principal o reflorestamento de áreas degradadas e entre outros projetos com foco em sustentabilidade gerando cada vez 
-            mais crédito de carbono.
-            </br></br></br>
-            Isso não é de mais? 
-            </br></br></br>
-            Todos ganham, o nosso PLANETA e VOCÊ!
-            </br></br></br>
-            Então não perca mais tempo e embarque nessa luta por um planeta mais sustentável!
-            </p>
-          </div>
-          </article>
-          <img src="src/img/13.png" class="img-fluid mr-3 img-cred" alt="Piramide de Sustentabilidade">
-
-          <article class="container mt-5">
-            <h5 class="fs-3 mt-5 mb-3" id="quem-somos">Quem somos</h5>
-            <div class="d-flex align-items-center">
-            <img src="src/img/logo_transparent_background.png " class="img-fluid mr-3 img-logo" alt="Logo">
-              <p class="lh-sm mt-3 mx-2">Somos uma startup em desenvolvimento com apoio da FATEC - Piracicaba (Faculdade de Tecnologia de Piracicaba) 
-                e em fase de Incubação pelo programa Explorer X do Santander. Nosso projeto está ligada a ODS 2030 (Objetivos 
-                do desenvolvimento Sustentável) estipulada pela ONU e nosso principal objetivo está relacionada a conscientização
-                 e mitigação das mudanças climáticas.</p>
-            </div>
-          </article>
-
-          <article class="container mt-5">
-            <h4>O que esperar da Arbos Bank?</h4>
-            <p class="lh-sm">
-                Nosso propósito é fazer com que pessoas e empresas através de suas próprias ações como uso de bicicletas, 
-                transportes públicos, carros elétricos, reciclagem, energias provenientes de fontes limpas e etc..., possam compensar
-                suas emissões de gases de efeito estufa (GEE) e assim gerar seus próprios créditos de carbono que serão computados em 
-                nossa plataforma/app e serão convertidos em uma moeda digital. </br>Posteriormente cada pessoa ou empresa poderá vender
-                ou investir em fundos de investimento sustentáveis, gerando mais crédito de carbono e  aumentando seus ganhos.
-            </p>
-          </article>
-
-          <article class="container mt-5">
-            <h2>Missão</h2>
-            <p class="lh-sm">Ser um Banco digital de Créditos de Carbono para que a sociedade de uma forma
-              geral possa contabilizar, comercializar e investir em Crédito de Carbono.</p>
-          </article>
-
-          <article class="container mt-5">
-            <h2>Visão</h2>
-            <p class="lh-sm">Ser uma das principais engrenagens no mercado de Crédito de Carbono.</p>
-          </article>
-
-          <article class="container mt-5">
-            <h2>Valores</h2>
-            <p class="lh-sm">Sustentabilidade; Economia verde; Cuidar do nosso Planeta; Conexão entre o
-              homem e a natureza; Por um planeta sustentável; Responsabilidade Ambiental; A união
-              faz a força.</p>
-          </article>
-
-          <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="modal-contato">CONTATO</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="mb-3">
-                    <label for="formGroupExampleInput">NOME</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome">
-                  </div>
-                  <div class="mb-3">
-                    <label for="formGroupExampleInput">SOBRENOME</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Sobrenome">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">NUMERO</label>
-                      <input type="number" class="form-control" id="inputNumero" placeholder="(xx) xxxxx-xxxx">
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn text-secondary" data-bs-dismiss="modal">Fechar</button>
-                  <button type="button" class="btn botao-cor-especial">Salvar</button>
-                </div>
+          <div class="border-success largura-card mt-5 p-2 g-col-6">
+            <div class="card card-size">
+              <div class="card-body">
+                <h5 class="card-title">Compra e venda</h5>
+                <p class="card-text">Comercialização dos créditos de carbono atuando como intermediário na compra e
+                  venda de créditos através de uma plataforma, ajudando empresas e indivíduos a compensar suas emissões
+                  GEE.</p>
+                <a href="#" class="btn text-bg-success" data-bs-toggle="modal" data-bs-target="#modal-contato">Fale
+                  conosco</a>
               </div>
             </div>
           </div>
-          
-    </main>
+          <div class="border-success largura-card mt-5 p-2 g-co">
+            <div class="card card-size">
+              <div class="card-body">
+                <h5 class="card-title">Investimento</h5>
+                <p class="card-text">Oferecemos a possibilidade de fazer investimento em fundos voltados para projetos
+                  sustentáveis como, energias renováveis, desmatamento evitado, reflorestamento e entre outras opções
+                </p>
+                <a href="#" class="btn text-bg-success" data-bs-toggle="modal" data-bs-target="#modal-contato">Fale
+                  conosco</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  </body>
+    <article class="container mt-5" id="credito-carbono">
+      <h3 class="fs-3 mt-5 mb-3">Crédito de carbono</h3>
+      <div class="d-flex align-items-center">
+        <p class="lh-sm mt-3 mx-2">O mercado de carbono não para de crescer e você não pode deixar de fazer parte dessa
+          escalada!
+          </br></br></br>
+          Com nossa plataforma você poderá através de suas ações compensar seus gases de efeito estufa e contabilizar em
+          nossa plataforma podendo ganhar crédito de carbono. E o melhor, você poderá comercializar esse crédito de
+          carbono podendo ganhar uma renda extra ajudando a mitigar as mudanças climáticas.
+          </br></br>
+          Além disso, se você optar por não vender seus crédito de carbono, outra opção é investir em nossos produtos
+          que tem como foco principal o reflorestamento de áreas degradadas e entre outros projetos com foco em
+          sustentabilidade gerando cada vez mais crédito de carbono.
+          </br></br></br>
+          Isso não é demais?
+          </br></br></br>
+          Todos ganham, o nosso PLANETA e VOCÊ!
+          </br></br></br>
+          Então não perca mais tempo e embarque nessa luta por um planeta mais sustentável!
+        </p>
+      </div>
+    </article>
+    <img src="src/img/13.png" class="img-fluid mr-3 img-cred" alt="Piramide de Sustentabilidade">
+
+    <article class="container mt-5">
+      <h5 class="fs-3 mt-5 mb-3" id="quem-somos">Quem somos</h5>
+      <div class="d-flex align-items-center">
+        <img src="src/img/logo_transparent_background.png" class="img-fluid mr-3 img-logo" alt="Logo">
+        <p class="lh-sm mt-3 mx-2">Somos uma startup em desenvolvimento com apoio da FATEC - Piracicaba (Faculdade de
+          Tecnologia de Piracicaba) e em fase de Incubação pelo programa Explorer X do Santander. Nosso projeto está
+          ligado a ODS 2030 (Objetivos do desenvolvimento Sustentável) estipulada pela ONU e nosso principal objetivo
+          está relacionado a conscientização e mitigação das mudanças climáticas.</p>
+      </div>
+    </article>
+
+    <article class="container mt-5">
+      <h4>O que esperar da Arbos Bank?</h4>
+      <p class="lh-sm">
+        Nosso propósito é fazer com que pessoas e empresas através de suas próprias ações como uso de bicicletas,
+        transportes públicos, carros elétricos, reciclagem, energias provenientes de fontes limpas e etc..., possam
+        compensar suas emissões de gases de efeito estufa (GEE) e assim gerar seus próprios créditos de carbono que
+        serão computados em nossa plataforma/app e serão convertidos em uma moeda digital. </br>Posteriormente cada
+        pessoa ou empresa poderá vender ou investir em fundos de investimento sustentáveis, gerando mais crédito de
+        carbono e aumentando seus ganhos.
+      </p>
+    </article>
+
+    <article class="container mt-5">
+      <h2>Missão</h2>
+      <p class="lh-sm">Ser um Banco digital de Créditos de Carbono para que a sociedade de uma forma geral possa
+        contabilizar, comercializar e investir em Crédito de Carbono.</p>
+    </article>
+
+    <article class="container mt-5">
+      <h2>Visão</h2>
+      <p class="lh-sm">Ser uma das principais engrenagens no mercado de Crédito de Carbono.</p>
+    </article>
+
+    <article class="container mt-5">
+      <h2>Valores</h2>
+      <p class="lh-sm">Sustentabilidade; Economia verde; Cuidar do nosso Planeta; Conexão entre o homem e a natureza; Por
+        um planeta sustentável; Responsabilidade Ambiental; A união faz a força.</p>
+    </article>
+
+    <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">CONTATO</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+                <p>Fale conosco</p>
+       <p class="footer-title">Email: <a href="mailto:arbosbank@gmail.com">arbosbank@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn text-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-footer footer-arbos">
+      <div class="row">
+        <div class="col-md-6 footer-col">
+          <img src="src/img/logo_transparent_background.png" alt="Arbos Bank" width="140" height="100">
+          <p class="footer-title">Email: <a href="mailto:arbosbank@gmail.com" class="footer-link">arbosbank@gmail.com</a></p>
+        </div>
+        <div class="col-md-6 footer-col">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="footer-title">Parceiros</h5>
+              <p><a href="https://www.cps.sp.gov.br/fatecs/fatec-piracicaba-deputado-roque-trevisan/"
+                class="footer-link">FATEC Piracicaba</a></p>
+              <p><a href="https://explorerbyx.org/pt/" class="footer-link">Explorer </br>Power by Santader</a></p>
+            </div>
+
+            <div class="col-md-6">
+              <h5 class="footer-title">Nos acompanhe nas Redes</h5>
+              <p><a href="https://www.facebook.com/people/Arbos-Bank/pfbid0ZHE2726pLZ595zv1i91uYPfTjDDBpPs2r9wht8sUchfC9R478E3wRvXvTg8TGMEbl/?mibextid=ZbWKwL" 
+                class="footer-link">Facebook</a></p>
+              <p><a href="https://www.instagram.com/arbosbank/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" 
+                class="footer-link">Instagram</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
 
 
+<!--criado por: Larissa Batista-->
+<!--linkedin: www.linkedin.com/in/larissa-batista-6300a01b0-->
