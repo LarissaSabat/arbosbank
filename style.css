@@ -3,33 +3,13 @@
 }
 
 .carrossel-conteiner{
-    height: 600px;
-}
-.imagem-carrossel-um{
+    height: 650px;
     object-fit: cover;
-    object-position: 70% 0;
-}
-
-.imagem-carrossel-dois {
-    object-fit: cover;
-    object-position: 0 15%;
-}
-
-.imagem-carrossel-tres {
-    object-fit: cover;
-    object-position: 50% 0;
-    }
-
-.fonte-carrossel {
-    font-family: "PT Serif", serif;
-  }
-
-.text-shadow{
-    text-shadow: 4px 4px 8px black;
 }
 
 main{
     background-color:whitesmoke;
+    margin-bottom: 50px;
 }
 
 .img-cred {
@@ -53,7 +33,7 @@ main{
     border: 15px solid green!important;
     border-radius: 10px;
 }
-.card-title{
+.card-title {
     color: darkgreen;
 }
 
@@ -76,3 +56,47 @@ main{
     padding: 50px;
     margin-top: 20px;
 }
+
+.footer-arbos {
+    background:#000000;
+    padding: 40px 0;
+    width: 100%;
+    position: relative; 
+    margin-top: 30px;
+  }
+
+.footer-arbos:before,
+.footer-arbos:after {
+  content: "";
+  display: table;
+}
+
+.footer-arbos:after {
+  clear: both;
+}
+
+.footer-col {
+  margin-bottom: 20px;
+}
+
+.footer-title {
+    color: darkolivegreen;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.container-footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; /* Adicionado */
+}
+
